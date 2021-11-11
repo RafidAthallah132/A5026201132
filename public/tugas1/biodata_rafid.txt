@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Biodata Saya</title>
+</head>
+<body>
+
+<h1>Biodata Rafid</h1>
+
+<hr>
+
+<p>Biodata saya</p>
+<ol>
+<li>Nama lengkap  : Rafid Ikbar Athallah</li>
+<li>Nama panggilan  : Rafid</li>
+<li>Tempat lahir : Kota Mojokerto, Jawa Timur</li>
+<li>Tanggal lahir : 10 November 2001</li>
+<li>Jenis Kelamin : Laki-Laki</li>
+<li>Anak ke : 2 (dua) dari 2 bersaudara</li>
+<li>Nama ayah  : Daru Darmo Puspito</li>
+<li>Pekerjaan ayah : Pegawai swasta</li>
+<li>Nama ibu : Retno Mufadlilah</li>
+<li>Pekerjaan Ayah : Ibu Rumah Tangga</li>
+<li>Golongan Darah : B</li>
+<li>Tinggi badan : 180 cm</li>
+<li>Berat badan : 75 kg</li>
+<li>Alamat : Jl Murbei 59 Kel. Wates Kec. Magersari</li>
+<li>Agama : Islam</li>
+<li>Status Perkawinan : Belum Kawin</li>
+<li>Pekerjaan : Pelajar/mahasiswa</li>
+<li>Kewarganegaraan : WNI</li>
+<li>No. Telepon : 085230728462</li>
+<li>Email : rafid.athallah@gmail.com</li>
+<p>
+
+</p>
+<p>Foto diri: </p>
+<img src="foto_rafid.jpg" alt="Foto Rafid">
+</ol>
+</div>
+<hr>
+
+</body>
+</html>
