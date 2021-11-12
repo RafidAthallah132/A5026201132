@@ -23,8 +23,12 @@ Route::get('praktikum2', function () {
     return view('htmlpraktikum2');
 });
 
+Route::get('ets',"soal_ets@jawabanets") ;
+
 Route::get('halaman_awal_php_kalkulator',"tugas_php@halamankalkulator") ;
 Route::post('hasil_perhitungan',"tugas_php@hasilperhitungan");
+
+
 
 
 

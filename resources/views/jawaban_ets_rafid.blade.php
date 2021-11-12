@@ -22,14 +22,14 @@
             margin: auto;
             padding: auto;
         }
-       
+
     </style>
 </head>
 
 <body>
 <br>
     <div class="container" id=content>
-        <form action="https://id.wikipedia.org/wiki/Halaman_Utama" class="needs-validation" novalidate>
+        <form action="https://id.wikipedia.org/wiki/Halaman_Utama" class="needs-validation" method="post" novalidate>
             <div class="form-group">
                 <br>
                 <p>Nama mahasiswa : Rafid Ikbar Athallah</p>
@@ -55,7 +55,7 @@
                         pattern="\d{16}" required>
                     <div class="valid-feedback">Name Valid.</div>
                     <div class="invalid-feedback">Hanya gunakan angka sebanyak 16 angka</div>
-                </div>              
+                </div>
                 <br>
 
                 <div class="form-inline">
@@ -66,7 +66,7 @@
                                 <option value="1">AZ</option>
                                 <option value="2">Sinovac</option>
                                 <option value="3">Moderna</option>
-            
+
                             </select>
                             <div class="valid-feedback">Jenis Vaksin Valid.</div>
                             <div class="invalid-feedback">Mohon pilih Jenis Vaksin</div>
@@ -82,7 +82,7 @@
                     <div class="invalid-feedback">Hanya gunakan angka dan huruf tapa simbol</div>
                 </div>
             </div>
-            
+
             <div class="form-inline">
             <div class="col-sm-1"></div>
             <button type="submit" class="btn btn-primary col-sm-4" >Simpan</button>

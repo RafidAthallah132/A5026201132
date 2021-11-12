@@ -92,7 +92,7 @@
                     <a href="praktikum1/praktikum_web_rafidikbarathallah_5026201132.html">Praktikum 1</a>
                     <a href="tugas4">Tugas 4</a>
                     <a href="praktikum2">Praktikum 2</a>
-                    <a href="">ETS</a>
+                    <a href="ets">ETS</a>
                     <a href="halaman_awal_php_kalkulator">Tugas PHP</a>
                 </div>
             </div>
