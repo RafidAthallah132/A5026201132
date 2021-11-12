@@ -87,9 +87,9 @@
 
                 <div class="links">
                     <a href="tugas1/biodata_rafid.html">Tugas 1</a>
-                    <a href="">Tugas 2</a>
-                    <a href="">Tugas 3</a>
-                    <a href="">Praktikum 1</a>
+                    <a href="tugas2/biodata_rafid_indexcss.html">Tugas 2</a>
+                    <a href="tugas3/web_rafid.indexbootstrap.html">Tugas 3</a>
+                    <a href="praktikum1/praktikum_web_rafidikbarathallah_5026201132.html">Praktikum 1</a>
                     <a href="tugas4">Tugas 4</a>
                     <a href="praktikum2">Praktikum 2</a>
                     <a href="">ETS</a>
