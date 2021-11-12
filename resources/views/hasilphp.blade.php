@@ -19,7 +19,7 @@
         }
 
         body{
-        background-image: url(https://i.pinimg.com/originals/f4/91/ac/f491acfc2b96e3f1be7f4548065ee461.jpg);
+        background-image: url(https://schoolsweek.co.uk/wp-content/uploads/2018/07/Math-Numbers-SM-1.jpg);
         background-repeat: no-repeat;
         background-size: cover;
 
