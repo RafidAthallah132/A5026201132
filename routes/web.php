@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('kumpulan_tugas_pweb');
 });
 
 Route::get('tugas4', function () {
@@ -23,8 +23,8 @@ Route::get('praktikum2', function () {
     return view('htmlpraktikum2');
 });
 
-Route::get('isiannama',"ViewController@showForm") ;
-Route::post('greetings',"ViewController@resultGreetings");
+Route::get('halaman_awal_php_kalkulator',"tugas_php@halamankalkulator") ;
+Route::post('hasil_perhitungan',"tugas_php@hasilperhitungan");
 
 
 
