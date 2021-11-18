@@ -28,7 +28,8 @@ Route::get('ets',"soal_ets@jawabanets") ;
 Route::get('halaman_awal_php_kalkulator',"tugas_php@halamankalkulator") ;
 Route::post('hasil_perhitungan',"tugas_php@hasilperhitungan");
 
-
-
-
+//route CRUD
+Route::get('/pegawai','PegawaiController@index');
+Route::get('/pegawai/tambah','PegawaiController@tambah');
+Route::post('/pegawai/store','PegawaiController@store');
 
