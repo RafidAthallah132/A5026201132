@@ -20,13 +20,49 @@
 
 <body>
 
-    <h3>@yield('judulhalaman')</h3>
+    <div class="container">
+        <div class="row">
+            <div class="page-header">
+                <div class="row">
+                    <div class="col-md-1 text-right">
+                        <img src="https://zedemy.com/wp-content/uploads/avatars/1666/6131bc5015bfc-bpfull.jpg" style="width:100px;">
+                    </div>
+                    <div class="col-md-3 text-right">
+                        <h1>5026201132</h1>
+                    </div>
+                    <div class="col-md text-left">
+                        <h1><b>Rafid Ikbar Athallah</b></h1>
+                    </div>
+                </div>
 
-    @section('konten')
+            </div>
+        </div>
+        <div class="row">
 
-    @show
+            <div class="col-md-3">
+                <div class="thumbnail" >
+                    <h1 class="text-center">Navigasi</h1>
+                <hr>
+                <ul class="nav text-center">
+                    <li><a href="/pegawai" class="btn btn-info p-1">Pegawai</a></li><br>
+                    <li><a href="/absen" class="btn btn-info p-1">Absen</a></li><br>
+                    <li><a href="/tugas" class="btn btn-info p-1">Tugas</a></li><br>
+                    <li><a href="" class="btn btn-info p-1" disabled>Minggu depan</a></li><br>
+                    <li><a href="" class="btn btn-info p-1" disabled>Praktikum</a></li><br>
+                </ul>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <h3>@yield('judulhalaman')</h3>
+                @section('konten')
+                @show
+            </div>
+        </div>
 
-    @yield('script')
+        <footer>
+            <p style="text-align: center">Hak cipta oleh 5026201132 - Rafid Ikbar Athallah</p>
+          </footer>
+    </div>
     <script type="text/javascript">
         $(function() {
             $('#dtpickerdemo').datetimepicker({

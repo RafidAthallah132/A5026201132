@@ -9,10 +9,10 @@
 
 	<form action="/pegawai/store" method="post">
 		{{ csrf_field() }}
-		Nama <input type="text" name="nama" required="required"> <br/>
-		Jabatan <input type="text" name="jabatan" required="required"> <br/>
-		Umur <input type="number" name="umur" required="required"> <br/>
-		Alamat <textarea name="alamat" required="required"></textarea> <br/>
+		Nama &nbsp&nbsp <input type="text" name="nama" required="required"> <br/> <br>
+		Jabatan <input type="text" name="jabatan" required="required"> <br/> <br>
+		Umur &nbsp&nbsp&nbsp <input type="number" name="umur" required="required"> <br/> <br>
+		Alamat &nbsp <textarea name="alamat" required="required"></textarea> <br/> <br>
 		<input type="submit" value="Simpan Data">
 	</form>
 @endsection
