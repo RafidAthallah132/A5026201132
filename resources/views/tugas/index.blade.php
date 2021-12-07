@@ -6,7 +6,8 @@
 
 @section('konten')
 	<a href="/tugas/tambah"> + Tambah Tugas Baru</a>
-
+    <br>
+    <br>
 	<table border="1">
 		<tr>
 			<th>ID</th>

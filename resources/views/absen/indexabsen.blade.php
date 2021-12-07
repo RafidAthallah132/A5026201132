@@ -31,12 +31,13 @@
 		</tr>
 		@endforeach
 	</table>
+    <br>
     <p>
         Keterangan Status: <br>
         I : Izin <br>
         S : Sakit <br>
         A : Alpha <br>
         H : Hadir <br>
-        </p>
+    </p>
 
 @endsection
