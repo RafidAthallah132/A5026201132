@@ -41,7 +41,7 @@
 
             <div class="col-md-3">
                 <div class="thumbnail" >
-                    <h1 class="text-center">Navigasi</h1>
+                    <h3 class="text-center">Daftar Tabel</h3>
                 <hr>
                 <ul class="nav text-center">
                     <li><a href="/pegawai" class="btn btn-info p-1">Pegawai</a></li><br>
