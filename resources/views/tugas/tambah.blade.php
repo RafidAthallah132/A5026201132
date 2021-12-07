@@ -47,7 +47,24 @@
         <br>
 
 		<input type="text" maxlength="50" name="namatugas" required="required"> <br> <br>
-		<input type="text" maxlength="1" name="status" required="required"> <br> <br>
+		<label class="radio-inline">
+            <input type="radio" id="Aktif" name="status" value="A" checked="checked">
+            <label for="Hadir">Aktif</label><br>
+        </label>
+        <label class="radio-inline">
+            <input type="radio" id="Luar Kota" name="status" value="L">
+            <label for="Izin">Luar Kota</label><br>
+        </label>
+        <label class="radio-inline">
+            <input type="radio" id="Cuti" name="status" value="C">
+            <label for="Sakit">Cuti</label><br>
+        </label>
+        <label class="radio-inline">
+            <input type="radio" id="Pensiun" name="status" value="P">
+            <label for="Alpha">Pensiun</label>
+        </label>
+        <br>
+        <br>
 		<input type="submit" value="Simpan Data">
 	</form>
 

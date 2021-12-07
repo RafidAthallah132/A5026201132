@@ -44,7 +44,24 @@
         </div>
         <br/>
 		<input type="text" maxlength="50" required="required" name="namatugas" value="{{ $t->NamaTugas }}"> <br/><br>
-		<input type="text" maxlength="1" required="required" name="status" value="{{  $t->Status  }}"> <br/><br>
+		<label class="radio-inline">
+            <input type="radio" id="Aktif" name="status" value="A" @if ($t->Status === "A" ) checked="checked" @endif>
+            <label for="html">Aktif</label><br>
+        </label>
+        <label class="radio-inline">
+            <input type="radio" id="Luar Kota" name="status" value="L"  @if ($t->Status === "L" ) checked="checked" @endif>
+            <label for="css">Luar Kota</label><br>
+        </label>
+        <label class="radio-inline">
+            <input type="radio" id="Cuti" name="status" value="C"  @if ($t->Status === "C" ) checked="checked" @endif>
+            <label for="javascript">Cuti</label><br>
+        </label>
+        <label class="radio-inline">
+            <input type="radio" id="Pensiun" name="status" value="P" @if ($t->Status === "P" ) checked="checked" @endif>
+            <label for="Hadir">Pensiun</label><br>
+        </label>
+        <br>
+        <br>
 		<input type="submit" value="Simpan Data">
 	</form>
 	@endforeach
