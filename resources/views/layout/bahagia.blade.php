@@ -47,7 +47,6 @@
                     <li><a href="/pegawai" class="btn btn-info p-1">Pegawai</a></li><br>
                     <li><a href="/absen" class="btn btn-info p-1">Absen</a></li><br>
                     <li><a href="/tugas" class="btn btn-info p-1">Tugas</a></li><br>
-                    <li><a href="" class="btn btn-info p-1" disabled>Minggu depan</a></li><br>
                     <li><a href="" class="btn btn-info p-1" disabled>Praktikum</a></li><br>
                 </ul>
                 </div>
