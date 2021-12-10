@@ -7,7 +7,8 @@
     <link
         href="//cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/build/css/bootstrap-datetimepicker.css"
         rel="stylesheet">
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
@@ -15,14 +16,18 @@
     <script
         src="//cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js">
     </script>
-
+<style>
+    body {
+  background-color: rgb(230, 243, 255);
+}
+    </style>
 </head>
 
 <body>
 
     <div class="container">
         <div class="row">
-            <div class="page-header">
+            <div class="page-header" >
                 <div class="row">
                     <div class="col-md-1 text-right">
                         <img src="https://zedemy.com/wp-content/uploads/avatars/1666/6131bc5015bfc-bpfull.jpg" style="width:100px;">
@@ -47,7 +52,7 @@
                     <li><a href="/pegawai" class="btn btn-info p-1">Pegawai</a></li><br>
                     <li><a href="/absen" class="btn btn-info p-1">Absen</a></li><br>
                     <li><a href="/tugas" class="btn btn-info p-1">Tugas</a></li><br>
-                    <li><a href="" class="btn btn-info p-1" disabled>Praktikum</a></li><br>
+                    <li><a href="/snack" class="btn btn-info p-1" >Praktikum</a></li><br>
                 </ul>
                 </div>
             </div>

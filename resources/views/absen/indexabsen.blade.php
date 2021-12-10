@@ -9,7 +9,8 @@
 	<br/>
 	<br/>
 
-	<table border="1">
+    <table class="table table-striped">
+        <thead>
 		<tr>
 
 			<th>Nama Pegawai</th>
@@ -17,7 +18,9 @@
 			<th>Status</th>
 			<th>Opsi</th>
 		</tr>
+        </thead>
 		@foreach($absen as $a)
+        <tbody>
 		<tr>
 
 			<td>{{ $a->pegawai_nama }}</td>
@@ -29,6 +32,7 @@
 				<a href="/absen/hapus/{{ $a->ID }}">Delete Absensi</a>
 			</td>
 		</tr>
+        </tbody>
 		@endforeach
 	</table>
     {{$absen->links()}}

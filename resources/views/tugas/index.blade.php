@@ -8,7 +8,8 @@
 	<a href="/tugas/tambah"> + Tambah Tugas Baru</a>
     <br>
     <br>
-	<table border="1">
+    <table class="table table-striped">
+        <thead>
 		<tr>
 			<th>Nama Pegawai</th>
 			<th>IDPegawai</th>
@@ -17,7 +18,9 @@
 			<th>Status</th>
             <th>Opsi</th>
 		</tr>
+        </thead>
 		@foreach($tugas as $t)
+        <tbody>
 		<tr>
 			<td>{{ $t->pegawai_nama }}</td>
 			<td>{{ $t->IDPegawai }}</td>
@@ -30,6 +33,7 @@
 				<a href="/tugas/hapus/{{ $t->ID }}">Hapus</a>
 			</td>
 		</tr>
+        </tbody>
 		@endforeach
 	</table>
     {{$tugas->links()}}

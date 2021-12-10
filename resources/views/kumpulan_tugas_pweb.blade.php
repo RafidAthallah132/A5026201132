@@ -94,6 +94,7 @@
                     <a href="praktikum2">Praktikum 2</a>
                     <a href="ets">ETS</a>
                     <a href="halaman_awal_php_kalkulator">Tugas PHP</a>
+                    <a href="pegawai">Tabel</a>
                 </div>
             </div>
         </div>

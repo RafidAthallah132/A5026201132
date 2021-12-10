@@ -52,3 +52,13 @@ Route::post('/absen/store','AbsenController@store');
 Route::get('/absen/edit/{id}','AbsenController@edit');
 Route::post('/absen/update','AbsenController@update');
 Route::get('/absen/hapus/{id}','AbsenController@hapus');
+
+//route praktikum (snack)
+Route::get('/snack','snackController@index');
+Route::get('/snack/tambah','snackController@tambah');
+Route::post('/snack/store','snackController@store');
+Route::get('/snack/edit/{id}','snackController@edit');
+Route::post('/snack/update','snackController@update');
+Route::get('/snack/hapus/{id}','snackController@hapus');
+Route::get('/snack/cari','snackController@cari');
+Route::get('/snack/view/{id}','snackController@detail');

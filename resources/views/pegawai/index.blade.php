@@ -4,7 +4,6 @@
 @section('judulhalaman', 'Tabel Pegawai')
 
 @section('konten')
-//<div class="col-md-9">
 <div class="container" align="center">
     <form action="/pegawai/cari" method="GET">
 		<input type="text" class="form-control" name="cari" placeholder="Cari Pegawai .." value="{{ old('cari') }}">
@@ -15,13 +14,16 @@
 	<a href="/pegawai/tambah"> + Tambah Pegawai Baru</a>
     <br>
     <br>
-	<table border="1">
+    <table class="table table-striped">
+    <thead>
 		<tr>
 			<th>Nama</th>
 			<th>Alamat</th>
 			<th>Opsi</th>
 		</tr>
+    </thead>
 		@foreach($pegawai as $p)
+        <tbody>
 		<tr>
 			<td>{{ $p->pegawai_nama }}</td>
 			<td>{{ $p->pegawai_alamat }}</td>
@@ -33,6 +35,7 @@
 				<a href="/pegawai/hapus/{{ $p->pegawai_id }}">Hapus</a>
 			</td>
 		</tr>
+    </tbody>
 		@endforeach
 	</table>
 
