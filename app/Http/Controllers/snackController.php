@@ -6,14 +6,14 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 
-class snackController extends Controller
+class SnackController extends Controller
 {
     public function index()
     {
         // mengambil data dari table snack
         //$snack = DB::table('snack')->get();
 
-        $snack = DB::table('snack')->paginate(3);
+        $snack = DB::table('snack')->paginate();
         // mengirim data snack ke view index
         return view('snack.index', ['snack' => $snack]);
     }
@@ -37,27 +37,33 @@ class snackController extends Controller
         return redirect('/snack');
     }
 
+
+
+
     // method untuk edit data pegawai
     public function edit($id)
     {
-        // mengambil data pegawai berdasarkan id yang dipilih
-        $snack = DB::table('snack')->where('kodesnack', $id)->get();
-        // passing data pegawai yang didapat ke view edit.blade.php
-        return view('snack.edit', ['snack' => $snack]);
-    }
+	    // mengambil data pegawai berdasarkan id yang dipilih
+	    $snack = DB::table('snack')->where('kodesnack',$id)->get();
+	    // passing data pegawai yang didapat ke view edit.blade.php
+	    return view('snack.edit',['snack' => $snack]);
 
+    }
     // update data pegawai
     public function update(Request $request)
     {
         // update data pegawai
-        DB::table('snack')->where('kodesnack', $request->id)->update([
+        DB::table('snack')->where('kodesnack', $request->kodesnack)->update([
             'merksnack' => $request->merksnack,
             'stocksnack' => $request->stocksnack,
-            'tersedia' => $request->tersedia,
+            'tersedia' => $request->tersedia
         ]);
         // alihkan halaman ke halaman pegawai
         return redirect('/snack');
     }
+
+
+
 
     // method untuk hapus data pegawai
     public function hapus($id)
