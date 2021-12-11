@@ -11,13 +11,14 @@
 	</form>
 </div>
 
-	<a href="/pegawai/tambah"> + Tambah Pegawai Baru</a>
+	<a href="/pegawai/tambah" class = "btn btn-primary"> + Tambah Pegawai Baru</a>
     <br>
     <br>
     <table class="table table-striped">
     <thead>
 		<tr>
 			<th>Nama</th>
+            <th>Jabatan</th>
 			<th>Alamat</th>
 			<th>Opsi</th>
 		</tr>
@@ -27,6 +28,7 @@
 		<tr>
 			<td>{{ $p->pegawai_nama }}</td>
 			<td>{{ $p->pegawai_alamat }}</td>
+            <td>{{ $p->pegawai_jabatan }}</td>
 			<td>
 				<a href="/pegawai/view/{{ $p->pegawai_id }}">View Detail</a>
 				|

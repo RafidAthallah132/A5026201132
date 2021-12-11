@@ -1,34 +1,31 @@
 @extends('layout.bahagia')
 
-@section('title', 'Edit Pegawai')
-@section('judulhalaman', 'Edit Data Pegawai')
+@section('title', 'Tabel Pegawai')
+@section('judulhalaman', 'Detail Pegawai')
 
 @section('konten')
 
 
 	@foreach($pegawai as $p)
-
-
-        <p><a href="/pegawai"> Kembali</a></p>
-        <div class="col-md-1">
-            Nama <br><br>
-            Jabatan <br><br><br>
-            Umur <br><br>
-            Alamat <br><br><br><br>
-        </div>
-        <div class="col-md-1">
-            : <br><br>
-            :<br><br><br>
-            :<br><br>
-            :<br><br><br><br>
-        </div>
-		{{ $p->pegawai_nama }} <br/><br>
-		{{ $p->pegawai_jabatan }} <br/><br><br>
-		{{ $p->pegawai_umur }} <br/><br>
-		{{ $p->pegawai_alamat }}<br/><br>
-
+    <a href="/pegawai" class = "btn btn-primary" > Kembali</a>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID      </th>
+                <th>Nama    </th>
+                <th>Jabatan </th>
+                <th>Umur    </th>
+                <th>Alamat  </th>
+            </tr>
+            <tr>
+                <th>{{ $p->pegawai_id }} </th>
+                <th>{{ $p->pegawai_nama }} </th>
+                <th>{{ $p->pegawai_jabatan }} </th>
+                <th>{{ $p->pegawai_umur }} </th>
+                <th>{{ $p->pegawai_alamat }}</th>
+            </tr>
+        </thead>
+    </table>
 	@endforeach
-
-
 
 @endsection

@@ -60,7 +60,6 @@ class AbsenController extends Controller
     {
         // update data absen
         DB::table('absen')->where('ID', $request->id)->update([
-
             'IDPegawai' => $request->idpegawai,
             'Tanggal' => $request->tanggal,
             'Status' => $request->status

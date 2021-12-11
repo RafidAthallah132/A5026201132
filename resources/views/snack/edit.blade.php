@@ -1,10 +1,9 @@
 @extends('layout.bahagia')
 
-@section('title', 'Tabel Pegawai')
-@section('judulhalaman', 'Tabel Pegawai')
+@section('title', 'Tabel Snack')
+@section('judulhalaman', 'Edit Tabel Snack')
 
 @section('konten')
-	<h3>Edit Pegawai</h3>
 
 	<br/>
 	<br/>
@@ -14,16 +13,33 @@
 		{{ csrf_field() }}
         <div class="form-group">
 
-        <input type="hidden" name="kodesnack" value="{{ $s->kodesnack }}"> <br/>
+        <input type="hidden" name="kodesnack" value="{{ $s->kodesnack }}">
 
-        <label for ="merksnack">merksnack </label> <input type="text" required="required" name="merksnack" value="{{ $s->merksnack}}" class = "form-control" autocomplete="off"> <br/>
-
-		<label for ="stocksnack">stocksnack </label> <input type="number" name="stocksnack" value = "{{ $s->stocksnack}}" required="required" pattern= "[0-9]{11}" class = "form-control"> <br/>
-
-        <label for = "tersedia">Tersedia <select id = "tersedia" class = "form-control" name = "tersedia" value = "{{ $s->tersedia}}">
-            <option value = "T">Tersedia</option>
-            <option value = "K">Kosong</option>
-        </select>
+        <table class="table table-borderless">
+            <thead>
+              <tr>
+                  <th>merksnack</th>
+                  <th><label for ="merksnack"> </label> <input type="text" required="required" name="merksnack" value="{{ $s->merksnack}}" class = "form-control" autocomplete="off"></th>
+              </tr>
+              <tr>
+                  <th>stocksnack</th>
+		          <th><label for ="stocksnack"> </label> <input type="number" name="stocksnack" value = "{{ $s->stocksnack}}" required="required" pattern= "[0-9]{11}" class = "form-control"> </th>
+              </tr>
+              <tr>
+                  <th>Tersedia</th>
+                  <th><label class="radio-inline">
+                    <input type="radio" id="Hadir" name="tersedia" value="T">
+                    <label for="Hadir">Tersedia</label><br>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" id="Izin" name="tersedia" value="K">
+                    <label for="Izin">Kosong</label><br>
+                </label>
+                  </th>
+                  </select>
+                </tr>
+            </thead>
+        </table>
         <br><br>
 		<input type="submit" value="Simpan Data" class = "btn btn-success">
         <a href="/snack" class = "btn btn-primary" > Kembali</a>

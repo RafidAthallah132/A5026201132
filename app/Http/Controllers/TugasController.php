@@ -12,7 +12,7 @@ class TugasController extends Controller
         // mengambil data dari table tugas
        // $tugas = DB::table('tugas')->get();
        $tugas = DB::table('tugas')
-       ->join('pegawai', 'tugas.ID', '=', 'pegawai.pegawai_id')
+       ->join('pegawai', 'tugas.IDPegawai', '=', 'pegawai.pegawai_id')
        ->select('tugas.*', 'pegawai.pegawai_nama')
        ->paginate();
 

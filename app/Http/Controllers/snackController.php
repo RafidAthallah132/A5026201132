@@ -13,7 +13,7 @@ class SnackController extends Controller
         // mengambil data dari table snack
         //$snack = DB::table('snack')->get();
 
-        $snack = DB::table('snack')->paginate();
+        $snack = DB::table('snack')->paginate(8);
         // mengirim data snack ke view index
         return view('snack.index', ['snack' => $snack]);
     }
@@ -91,7 +91,7 @@ class SnackController extends Controller
     		// mengambil data dari table snack sesuai pencarian data
 		$snack = DB::table('snack')
 		->where('merksnack','like',"%" . $cari . "%")
-		->paginate(3);
+		->paginate(8);
 
     		// mengirim data snack ke view index
 		return view('snack.index',['snack' => $snack]);

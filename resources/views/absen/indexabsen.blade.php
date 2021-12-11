@@ -4,7 +4,7 @@
 @section('judulhalaman', 'Daftar Absensi Pegawai')
 
 @section('konten')
-	<a href="/absen/add"> + Tambah Absensi</a>
+	<a href="/absen/add" class = "btn btn-primary"> + Tambah Absensi</a>
 
 	<br/>
 	<br/>

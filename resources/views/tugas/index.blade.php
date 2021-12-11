@@ -5,7 +5,7 @@
 @section('judulhalaman', 'Tabel Tugas')
 
 @section('konten')
-	<a href="/tugas/tambah"> + Tambah Tugas Baru</a>
+	<a href="/tugas/tambah" class = "btn btn-primary"> + Tambah Tugas Baru</a>
     <br>
     <br>
     <table class="table table-striped">

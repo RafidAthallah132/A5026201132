@@ -1,34 +1,28 @@
 @extends('layout.bahagia')
 
-@section('title', 'Edit Pegawai')
-@section('judulhalaman', 'Edit Data Pegawai')
+@section('title', 'Detail Snack')
+@section('judulhalaman', 'Detail Data Snack')
 
 @section('konten')
-
-
+    <br>
 	@foreach($snack as $s)
-
-
-        <p><a href="/snack"> Kembali</a></p>
-        <div class="col-md-1">
-            Kode Snack <br><br>
-            Merk Snack <br><br><br>
-            Stocksnack <br><br>
-            Tersedia <br><br><br><br>
-        </div>
-        <div class="col-md-1">
-            : <br><br>
-            :<br><br><br>
-            :<br><br>
-            :<br><br><br><br>
-        </div>
-		{{ $s->kodesnack }} <br/><br>
-		{{ $s->merksnack }} <br/><br><br>
-		{{ $s->stocksnack }} <br/><br>
-		{{ $s->tersedia }}<br/><br>
-
+    <a href="/snack" class = "btn btn-primary" > Kembali</a>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Kode Snack  </th>
+                    <th>Merk Snack  </th>
+                    <th>Stocksnack  </th>
+                    <th>Tersedia    </th>
+                </tr>
+                <tr>
+		            <th>{{ $s->kodesnack }} </th>
+                    <th>{{ $s->merksnack }} </th>
+		            <th>{{ $s->stocksnack }}</th>
+		            <th>{{ $s->tersedia }}  </th>
+                </tr>
+            </thead>
+        </table>
 	@endforeach
-
-
 
 @endsection
