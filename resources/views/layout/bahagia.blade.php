@@ -53,6 +53,7 @@
                     <li><a href="/absen" class="btn btn-info p-1">Absen</a></li><br>
                     <li><a href="/tugas" class="btn btn-info p-1">Tugas</a></li><br>
                     <li><a href="/snack" class="btn btn-info p-1" >Praktikum</a></li><br>
+                    <li><a href="/karyawan1" class="btn btn-info p-1" >EAS</a></li><br>
                 </ul>
                 </div>
             </div>
